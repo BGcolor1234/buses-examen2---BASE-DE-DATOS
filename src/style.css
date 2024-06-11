@@ -1,0 +1,64 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #333;
+  color: #fff;
+}
+
+
+
+table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para el formulario de registro */
+  #registerForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form button {
+  width: 100%;
+}
+
+/* Estilos CSS para los botones de la lista de viajes */
+ul#lista-viajes li button {
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+
+/* Asegúrate de que el texto del modal sea negro */
+#tripulacionesModal .modal-content {
+  color: black;
+}

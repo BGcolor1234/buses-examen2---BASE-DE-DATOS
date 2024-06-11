@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="icon" href="../img/bus.jpeg">
+    
+
+    <!-- Enlaces a archivos CSS externos -->
+    
+    <link href="./output.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+<body>
+
+    <header>
+
+    </header>
+
+
+
+    <main>
+
+        <div class=" min-h-screen flex  justify-center  py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center"
+        style="background-image: url(../img/bus.jpeg);">
+        <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+        <div class="max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10">
+            <div class="text-center">
+                <h2 class="mt-6 text-3xl font-bold text-gray-900">
+                    <img src="../img/bus.jpeg" alt="Logo" class="inline-block h-8 w-auto align-middle mr-2"> BUS DOTERO
+                </h2>
+            </div>
+            
+
+            <form id="loginForm" class="mt-8 space-y-6" action="#" method="POST">
+                <input type="hidden" name="remember" value="true">
+                <div class="relative">
+                  
+                    <label class="text-sm font-bold text-gray-700 tracking-wide">CORREO</label>
+                    <input id="email" class=" w-full text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="email" placeholder="mail@gmail.com" required>
+                </div>
+                <div class="mt-8 content-center">
+                    <label class="text-sm font-bold text-gray-700 tracking-wide">
+                        CONTRASEÑA
+                    </label>
+                    <input id="password" class="w-full content-center text-base py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="password" placeholder="INGRESE SU CONTRASEÑA" required>
+                </div>
+                <div class="flex items-center justify-between">
+                       
+                    
+                </div>
+                <div>
+                    
+                    <a
+                    id="joinLink"
+                    href="./choferes.html"
+                    class="w-full flex justify-center bg-blue-600 text-gray-100 p-4  rounded-full tracking-wide
+                    font-semibold  focus:outline-none focus:shadow-outline hover:bg-green-600 shadow-lg cursor-pointer transition ease-in duration-300"
+                    >
+                    UNETE!!
+                    </a>
+                    
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    </main>
+
+
+    <script src="../buses-examen/src/main.ts"> </script>
+    <script src="../buses-examen/src/funciones/login.ts" type="module"></script>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    
+
+</body>
+
+</html>
