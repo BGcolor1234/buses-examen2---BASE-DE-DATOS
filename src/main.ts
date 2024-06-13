@@ -412,15 +412,23 @@ function editarViaje(viaje: Viaje, estadoOriginal: string): void {
     (document.getElementById('fecha') as HTMLInputElement).value = viaje.fechahorasalida;
     (document.getElementById('fecha2') as HTMLInputElement).value = viaje.fechahorallegada;
     
+    
 
     // Establecer el valor del campo de bus en el formulario
     const busSeleccionado = viaje.bus.length > 0 ? viaje.bus[0].codigobuses : ''; // Obtener el código del bus seleccionado
     (document.getElementById('busViaje') as HTMLSelectElement).value = busSeleccionado;
 
+    // Establecer el valor del campo de bus en el formulario
+    const tripulacionseleccionada = viaje.tripulacion.length > 0 ? viaje.tripulacion[0].idcodigo : ''; // Obtener el código del bus seleccionado
+    (document.getElementById('tripulacionViaje') as HTMLSelectElement).value = tripulacionseleccionada;
+
+    
     const modal = document.getElementById('crud-modal');
     if (modal) {
         modal.classList.remove('hidden'); // Mostrar el modal
     }
+
+
 
     // Cambiar el texto del botón de enviar del formulario a "Guardar Cambios"
     const botonEnviar = document.getElementById('enviarViaje') as HTMLButtonElement;
